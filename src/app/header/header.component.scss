@@ -1,0 +1,30 @@
+@import "_colors";
+
+:host {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: $blue-dark;
+    border-radius: 12px 100px 12px 12px;
+
+    .fy-l-title {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+
+        &--name{
+            font-size: xxx-large;
+            font-weight: 700;
+        }
+    }
+
+    .fy-l-icons {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        color:$blue-pale;
+    }
+
+}

@@ -1,3 +1,36 @@
-p {
-  font-family: Lato;
+//IT DOES NOT EXIST
+app-header {
+  
+  width: 80%;
+  min-height: 200px;
+  margin: auto;
+  padding: 2% 5%;
+
+  cursor: default;
+}
+
+:host {
+
+  // display: grid;
+
+  // grid-gap: .6px;
+  // grid-template-columns: 100%;
+  // grid-template-rows: 1fr 1fr;
+
+  // box-shadow: $box-shadow;
+
+  // grid-template-areas:
+  //   "header"
+  //   "body";
+
+  // @media only screen and (min-width: 768px) {
+  //   grid-template-columns: 1fr 1fr;
+  //   grid-template-rows: auto;
+
+  //   background: pink;
+
+  //   grid-template-areas:
+  //     "header header"
+  //     "body footer";
+  // }
 }
