@@ -1,15 +1,36 @@
-//IT DOES NOT EXIST
-app-header {
-  
-  width: 80%;
-  min-height: 200px;
-  margin: auto;
-  padding: 2% 5%;
-
-  cursor: default;
-}
-
 :host {
+
+  // width: max-content;
+  // height: max-content;
+
+  .fy-c-header {
+    grid-area: header;
+    // margin: auto;
+    // padding: 2% 5%;
+  }
+
+  .fy-c-content {
+    grid-area: content;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  display: grid;
+  grid-template-columns: 24px 1fr 24px;
+  grid-gap: 10px;
+  
+  grid-template-areas:
+  ".... .... ...."
+    ".... header ...."
+    ".... content ...."
+    ".... .... ....";
 
   // display: grid;
 
@@ -19,9 +40,6 @@ app-header {
 
   // box-shadow: $box-shadow;
 
-  // grid-template-areas:
-  //   "header"
-  //   "body";
 
   // @media only screen and (min-width: 768px) {
   //   grid-template-columns: 1fr 1fr;
