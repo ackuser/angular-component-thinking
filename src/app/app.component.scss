@@ -1,36 +1,39 @@
-//IT DOES NOT EXIST
-app-header {
-  
-  width: 80%;
-  min-height: 200px;
-  margin: auto;
-  padding: 2% 5%;
-
-  cursor: default;
-}
+@import "_colors";
 
 :host {
 
-  // display: grid;
+  // width: max-content;
+  // height: max-content;
 
-  // grid-gap: .6px;
-  // grid-template-columns: 100%;
-  // grid-template-rows: 1fr 1fr;
+  .fy-c-header {
+    grid-area: header;
+    // margin: auto;
+    // padding: 2% 5%;
+  }
 
-  // box-shadow: $box-shadow;
+  .fy-c-content {
+    grid-area: content;
+  }
 
-  // grid-template-areas:
-  //   "header"
-  //   "body";
+  .fy-l-footer {
+    grid-area: footer;
 
-  // @media only screen and (min-width: 768px) {
-  //   grid-template-columns: 1fr 1fr;
-  //   grid-template-rows: auto;
+    margin: auto;
+    font-size: 11px;
+    text-align: center;
 
-  //   background: pink;
+    &--link {
+      color: $blue-pale;
+    }
+  }
 
-  //   grid-template-areas:
-  //     "header header"
-  //     "body footer";
-  // }
+  display: grid;
+  grid-template-columns: 24px 1fr 24px;
+  grid-gap: 15px;
+
+  grid-template-areas: ".... .... ...."
+  ".... header ...."
+  ".... footer ...."
+  ".... .... ....";
+
 }

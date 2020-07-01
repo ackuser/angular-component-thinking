@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BorderDirective } from './directives/border.directive';
+import { ScrollbarComponent } from './scrollbar/scrollbar.component';
+import { ScrollbarDetailComponent } from './scrollbar-detail/scrollbar-detail.component';
 
 @NgModule({
    imports: [
@@ -15,7 +17,9 @@ import { BorderDirective } from './directives/border.directive';
    declarations: [
       AppComponent,
       HeaderComponent,
-      BorderDirective
+      BorderDirective,
+      ScrollbarComponent,
+      ScrollbarDetailComponent
    ],
    bootstrap: [
       AppComponent
