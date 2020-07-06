@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-scrollbar-detail',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./scrollbar-detail.component.scss']
 })
 export class ScrollbarDetailComponent implements OnInit {
+
+  @Input() from = 0;
+  @Input() to;
 
   constructor() { }
 

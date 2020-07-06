@@ -1,4 +1,19 @@
+@import "_colors";
+
 :host {
-    width: 100%;
-    border-radius: 12px 12px 12px 12px;
+    .fy-c-scrollbar {
+        height: 18px;
+        border-radius: 12px 12px 12px 12px;
+        background-image: linear-gradient(to right,
+                $color-primary-1, $color-primary-2);
+
+        &__dot {
+            height: 18px;
+            width: 18px;
+            background-color: white;
+            border-radius: 50%;
+            display: block;
+            float: right;
+        }
+    }
 }
