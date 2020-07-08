@@ -1,17 +1,22 @@
 @import "_colors";
 
 :host {
-
-    background: white;
-    z-index: 1;
-
+    
+    
     .fy-c-tooltip {
+        z-index: 1;
+        background: white;
+        padding: 24px;
+        width: 200px;
+        border-radius: 12px;
 
         font-size: medium;
+        font-weight: 400;
         color: $blue-grayish;
 
         &__amount {
             font-size: xx-large;
+            font-weight: 700;
             color: $blue-verydark;
         }
     }

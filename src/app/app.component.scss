@@ -1,3 +1,5 @@
+@import "_colors";
+
 :host {
 
   .fy-c-header {
@@ -16,7 +18,7 @@
     text-align: center;
 
     &--link{
-      color: hsl(228, 45%, 44%);
+      color: $blue-pale;
     }
   }
 

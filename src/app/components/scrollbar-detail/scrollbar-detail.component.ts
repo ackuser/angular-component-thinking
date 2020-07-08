@@ -16,11 +16,13 @@ export class ScrollbarDetailComponent implements OnInit {
   @HostListener('mouseover')
   onMouseOver() {
     this.mouseover = true;
+    console.log(this.mouseover)
   }
 
   @HostListener('mouseout')
   onMouseOut() {
     this.mouseover = false;
+    console.log(this.mouseover)
   }
 
   @Input() from = 0;
@@ -33,6 +35,7 @@ export class ScrollbarDetailComponent implements OnInit {
   ngOnInit() {
     this.width = this.el.nativeElement.offsetWidth;
     this.realTo = (this.used * this.width) / this.to;
+    this.left = this.to - this.from - this.used; 
     console.log(`From --> ${this.from}`)
     console.log(`Used --> ${this.used}`)
     console.log(`Left --> ${this.left}`)
