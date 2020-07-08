@@ -1,0 +1,19 @@
+@import "_colors";
+
+:host {
+
+    background: white;
+    z-index: 1;
+
+    .fy-c-tooltip {
+
+        font-size: medium;
+        color: $blue-grayish;
+
+        &__amount {
+            font-size: xx-large;
+            color: $blue-verydark;
+        }
+    }
+
+}

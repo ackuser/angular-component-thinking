@@ -1,13 +1,14 @@
+import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 import { BorderDirective } from './directives/border.directive';
-import { ScrollbarComponent } from './scrollbar/scrollbar.component';
-import { ScrollbarDetailComponent } from './scrollbar-detail/scrollbar-detail.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ScrollbarComponent } from './components/scrollbar/scrollbar.component';
+import { ScrollbarDetailComponent } from './components/scrollbar-detail/scrollbar-detail.component';
 
 @NgModule({
    imports: [
@@ -19,7 +20,8 @@ import { ScrollbarDetailComponent } from './scrollbar-detail/scrollbar-detail.co
       HeaderComponent,
       BorderDirective,
       ScrollbarComponent,
-      ScrollbarDetailComponent
+      ScrollbarDetailComponent,
+      TooltipComponent
    ],
    bootstrap: [
       AppComponent

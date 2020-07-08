@@ -1,25 +1,23 @@
 :host {
 
-  // width: max-content;
-  // height: max-content;
-
   .fy-c-header {
     grid-area: header;
-    // margin: auto;
-    // padding: 2% 5%;
   }
 
   .fy-c-content {
     grid-area: content;
   }
 
-  .attribution {
+  .fy-l-footer {
+    grid-area: footer;
+    
+    margin: auto;
     font-size: 11px;
     text-align: center;
-  }
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+    &--link{
+      color: hsl(228, 45%, 44%);
+    }
   }
 
   display: grid;
@@ -30,16 +28,7 @@
   ".... .... ...."
     ".... header ...."
     ".... content ...."
-    ".... .... ....";
-
-  // display: grid;
-
-  // grid-gap: .6px;
-  // grid-template-columns: 100%;
-  // grid-template-rows: 1fr 1fr;
-
-  // box-shadow: $box-shadow;
-
+    ".... footer ....";
 
   // @media only screen and (min-width: 768px) {
   //   grid-template-columns: 1fr 1fr;
