@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScrollbarComponent implements OnInit {
 
+  from = 0;
+  to = 1000;
+  used = 815;
+
   constructor() { }
 
   ngOnInit() {

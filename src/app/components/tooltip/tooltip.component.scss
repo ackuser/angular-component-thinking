@@ -2,12 +2,16 @@
 
 :host {
     
-    
     .fy-c-tooltip {
+
+        position: absolute;
+        width: 50%;
+        margin: 15% 0 0 7%;
         z-index: 1;
+        
         background: white;
         padding: 24px;
-        width: 200px;
+        height: fit-content;
         border-radius: 12px;
 
         font-size: medium;

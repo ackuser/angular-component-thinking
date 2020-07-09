@@ -2,11 +2,8 @@
   You’ve used <span class="fy-l-scrollbar-header__qt">815 GB</span> of your storage
 </div>
 
-<app-scrollbar-detail [used]="815" [to]="1000"></app-scrollbar-detail>
-
-<!-- 185 GB Left -->
+<app-scrollbar-detail [from]="from" [used]="used" [to]="to"></app-scrollbar-detail>
 
 <div class="fy-l-scrollbar-footer">
-  <span>0 GB</span> <span>1000 GB</span>
+  <span>{{from}} GB</span> <span>{{to}} GB</span>
 </div>
-<!-- rule of three math explained -->

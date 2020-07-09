@@ -16,13 +16,11 @@ export class ScrollbarDetailComponent implements OnInit {
   @HostListener('mouseover')
   onMouseOver() {
     this.mouseover = true;
-    console.log(this.mouseover)
   }
 
   @HostListener('mouseout')
   onMouseOut() {
     this.mouseover = false;
-    console.log(this.mouseover)
   }
 
   @Input() from = 0;
