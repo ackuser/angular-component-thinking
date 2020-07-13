@@ -1,6 +1,36 @@
 @import "_colors";
 
 :host {
+    flex-grow: 1;
+    width: 100%;
+    background-color: $blue-dark;
+    border-radius: 12px 12px 12px 12px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+    .fy-l-scrollbar-header {
+        
+        text-align: center;
+        color: $blue-pale;
+        font-weight: 200;
+
+        &__qt{
+            font-weight: 700;
+        }
+    }
+
+    
+    .fy-l-scrollbar-footer {
+        display: flex;
+        justify-content: space-between;
+        color: $blue-pale;
+        font-weight: 700;
+
+    }
+
     .fy-c-scrollbar {
         height: 18px;
         border-radius: 12px 12px 12px 12px;

@@ -1,4 +1,11 @@
+<div class="fy-l-scrollbar-header">
+    You’ve used <span class="fy-l-scrollbar-header__qt">815 GB</span> of your storage
+  </div>
+  
 <div class="fy-c-scrollbar" [ngStyle]="{'width': realTo + 'px'}">
     <span class="fy-c-scrollbar__dot"></span>
 </div>
-<app-tooltip [visible]="mouseover" [amount]="left"></app-tooltip>
+
+<div class="fy-l-scrollbar-footer">
+    <span>{{from}} GB</span> <span>{{to}} GB</span>
+  </div>

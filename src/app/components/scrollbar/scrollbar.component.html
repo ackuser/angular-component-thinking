@@ -1,9 +1,3 @@
-<div class="fy-l-scrollbar-header">
-  You’ve used <span class="fy-l-scrollbar-header__qt">815 GB</span> of your storage
-</div>
+<app-scrollbar-detail #scrollbar [from]="from" [used]="used" [realTo]="realTo" [to]="to"></app-scrollbar-detail>
 
-<app-scrollbar-detail [from]="from" [used]="used" [to]="to"></app-scrollbar-detail>
-
-<div class="fy-l-scrollbar-footer">
-  <span>{{from}} GB</span> <span>{{to}} GB</span>
-</div>
+<app-tooltip [visible]="mouseover" [amount]="left"></app-tooltip>
